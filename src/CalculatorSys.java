@@ -37,7 +37,7 @@ public class CalculatorSys {
 	public static String verifyOperator(String operator, Scanner scanner) {
 		operator = scanner.nextLine();
 		
-		while (!operator.equals("/") || operator.equals("*") || operator.equals ("-") || operator.equals("+")) {
+		while (!operator.equals("/") && !operator.equals("*") && !operator.equals ("-") && !operator.equals("+")) {
 			System.out.println("Error - arguments must be of the type NUMBER1 {'*','/','+','-'} NUMBER2");
 			operator = scanner.nextLine();
 		}
